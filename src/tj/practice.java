@@ -1,7 +1,5 @@
 package tj;
 
-
-
 public class practice {
 	public static int[] calculate(int times) {
 		int[] result = new int[9];
@@ -10,26 +8,21 @@ public class practice {
 		}
 		return result;
 	}
-
 	
-	public static void main(String[] args) {
-		int[] result = calculate(2);
-		
+	public static void print(int[] result) {
 		for(int i=0; i < result.length; i++) {
 			System.out.println(result[i]);
 		}
-		int[] times3 = calculate(3);
-		
-		for(int i=0; i < times3.length; i++) {
-			System.out.println(times3[i]);
-		}
-		int[] times4 = calculate(4);
-		for(int i=0; i < times4.length; i++) {
-			System.out.println(times4[i]);
-		}
-		
-	
 	}
-
 	
+	public static void main(String[] args) {
+		int[] result = calculate(2);
+		print(result);
+		
+		int[] times3 = calculate(3);
+		print(times3);
+		
+		int[] times4 = calculate(4);
+		print(times4);
+	}
 }
